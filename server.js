@@ -3,7 +3,6 @@ import hbs from 'hbs'
 import path from 'path'
 
 const app = express()
-
 const __dirname = path.resolve()
 
 app.set('view engine', 'html')

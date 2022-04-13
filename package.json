@@ -10,7 +10,7 @@
     "maybe-install": "test -d node_modules || npm install",
     "start-prod": "npm run maybe-install; node server.js",
     "start-dev": "npm run maybe-install; ./node_modules/.bin/nodemon -q server.js -e js,json -i 'www/*' -i 'node_modules/*'",
-    "start": "echo $ENVIRONMENT|grep -i dev >/dev/null 2>&1 && npm run start-dev || npm run start-prod"
+    "start": "npm run start-prod"
   },
   "repository": {
     "type": "git",
